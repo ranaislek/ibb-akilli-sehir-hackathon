@@ -1,0 +1,12 @@
+department_id;department_name;category_name
+1;İSKİ;su_kanalizasyon
+2;Çevre Koruma ve Kontrol Dairesi;atik_yonetimi_temizlik
+3;İETT;ulasim_trafik
+4;Yol Yapım Dairesi;yol_altyapi
+5;Park ve Bahçeler Dairesi;yesil_alan_bahce
+6;Yol Bakım Dairesi;aydinlatma
+7;Sosyal Hizmetler Dairesi;sosyal_yardim
+8;Mali Hizmetler Dairesi;fatura_odeme
+9;İmar Dairesi;ruhsat_imar
+10;Beyaz Masa;sikayet_takip
+11;Bilgi İşlem Dairesi;dijital_sistem

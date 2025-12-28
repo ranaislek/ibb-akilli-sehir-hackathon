@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ibb-hackathon-2025
 Yapay Zeka Destekli Başvuru Takip Platformu
 =======

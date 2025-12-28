@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # ibb-hackathon-2025
 Yapay Zeka Destekli Başvuru Takip Platformu
 =======
@@ -120,14 +119,3 @@ To remove volumes as well:
 ```bash
 docker-compose down -v
 ```
-
-## Files
-
-- `istanbuilders_final.ipynb` - Main notebook
-- `docker-compose.yml` - PostgreSQL + pgvector setup
-- `data/complaints.csv` - Sample complaints data
-- `data/departments.csv` - Department categories
-- `prediction_results.csv` - Classification results (generated)
-- `category_performance.csv` - Performance metrics (generated)
-- `wrong_predictions.csv` - Misclassified complaints (generated)
->>>>>>> 7779c6e (oley bitti)

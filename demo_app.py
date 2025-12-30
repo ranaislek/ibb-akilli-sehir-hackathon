@@ -190,7 +190,8 @@ def get_neighborhood_coordinates(district, neighborhood):
         """, (district, neighborhood))
         result = cur.fetchone()
         cur.close()
-        if result:
+        # Check if we have valid coordinates (not NULL)
+        if result and result[0] is not None and result[1] is not None:
             return result[0], result[1]
     except:
         pass

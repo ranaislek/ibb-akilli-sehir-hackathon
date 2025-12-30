@@ -42,7 +42,18 @@ Projemizin en büyük farkı, yüksek maliyetli kapalı kaynaklı LLM'ler (ChatG
 
 Sistem, şikayetleri aşağıdaki ana departmanlara otomatik olarak yönlendirir:
 
-1. Su & Kanalizasyon, 2. Atık Yönetimi, 3. Temizlik, 4. Ulaşım & Trafik, 5. Yol & Altyapı, 6. Yeşil Alan & Bahçe, 7. Aydınlatma, 8. Sosyal Yardım, 9. Fatura & Ödeme, 10. Başvuru & Ruhsat, 11. Şikayet Takip, 12. Dijital Sistemler.
+1. Su & Kanalizasyon,
+2. Atık Yönetimi,
+3. Temizlik,
+4. Ulaşım & Trafik,
+5. Yol & Altyapı,
+6. Yeşil Alan & Bahçe,
+7. Aydınlatma,
+8. Sosyal Yardım,
+9. Fatura & Ödeme,
+10. Başvuru & Ruhsat,
+11. Şikayet Takip,
+12. Dijital Sistemler.
 
 ---
 

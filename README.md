@@ -18,15 +18,21 @@ Bu proje, **İBB Tech Istanbul Yapay Zeka Hackathonu (Aralık 2025)** kapsamınd
 
 Sistemimiz, sınıflandırılan verileri gerçek zamanlı olarak görselleştirerek karar vericilere sunar.
 
-### 1. Genel Durum İzleme (Tüm Başvurular)
+## 1. Genel Durum İzleme (Tüm Başvurular)
 
-Tüm İstanbul genelindeki başvuruların dağılımı, en yoğun konular ve çözüm oranları merkezi bir panel üzerinden takip edilir.
-* (Görsel Notu: İBB Başvuru Takip Sistemi ~ Tüm Başvurular)*
+İstanbul genelindeki tüm başvuruların dağılımı, en yoğun konu başlıkları ve çözüm oranları merkezi bir dashboard üzerinden izlenir.
 
-### 2. Birim Bazlı ve Lokasyonel Detay (İSKİ Örneği)
+![İBB Başvuru Takip Sistemi – Tüm Başvurular](./ibb-dashboard.png)
 
-Belirli bir kategoriye (Örn: Su & Kanalizasyon) ait başvurular, harita üzerinde nokta atışı lokasyon ve içerik analizi ile görüntülenebilir.
-* (Görsel Notu: Kadıköy/Göztepe bölgesinden gelen düşük su basıncı şikayeti detayı)*
+---
+
+## 2. Birim Bazlı ve Lokasyon Bazlı Detay (İSKİ Örneği)
+
+Belirli bir kategoriye (örn. **Su & Kanalizasyon**) ait başvurular; harita üzerinde **nokta bazlı lokasyon**, başvuru içeriği ve durum bilgisiyle birlikte detaylı olarak analiz edilebilir.
+
+Aşağıdaki örnekte, **Kadıköy / Göztepe** bölgesinden gelen *düşük su basıncı* şikayetleri lokasyon bazlı olarak gösterilmektedir.
+
+![İSKİ – Lokasyon Bazlı Başvuru Analizi](./dashboard-maps.png)
 
 ---
 

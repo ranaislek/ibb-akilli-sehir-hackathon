@@ -9,10 +9,24 @@ Bu proje, **İBB Tech Istanbul Yapay Zeka Hackathonu (Aralık 2025)** kapsamınd
 **IstanBuilders olarak çözümümüz:**
 
 * **Otomatik Sınıflandırma:** Gelen serbest metin şikayetlerini semantik analiz ile otomatik olarak 12 farklı kategoriye ayırır.
-
 * **Anlık Operasyonel Takip:** Şikayetler anlık olarak ilgili birimin PowerBI tabanlı dashboard'una düşer ve harita üzerinden lokasyon bazlı takip edilebilir.
-
 * **Genişletilebilirlik:** Sistem, sesli şikayetler (Alo 153) veya görsel veriler üzerinde de çalışabilecek esnekliktedir.
+
+---
+
+## 📊 Dashboard ve İzleme Paneli
+
+Sistemimiz, sınıflandırılan verileri gerçek zamanlı olarak görselleştirerek karar vericilere sunar.
+
+### 1. Genel Durum İzleme (Tüm Başvurular)
+
+Tüm İstanbul genelindeki başvuruların dağılımı, en yoğun konular ve çözüm oranları merkezi bir panel üzerinden takip edilir.
+* (Görsel Notu: İBB Başvuru Takip Sistemi ~ Tüm Başvurular)*
+
+### 2. Birim Bazlı ve Lokasyonel Detay (İSKİ Örneği)
+
+Belirli bir kategoriye (Örn: Su & Kanalizasyon) ait başvurular, harita üzerinde nokta atışı lokasyon ve içerik analizi ile görüntülenebilir.
+* (Görsel Notu: Kadıköy/Göztepe bölgesinden gelen düşük su basıncı şikayeti detayı)*
 
 ---
 
@@ -21,27 +35,14 @@ Bu proje, **İBB Tech Istanbul Yapay Zeka Hackathonu (Aralık 2025)** kapsamınd
 Projemizin en büyük farkı, yüksek maliyetli kapalı kaynaklı LLM'ler (ChatGPT vb.) yerine **tamamen yerel ve masrafsız** bir NLP mimarisi kullanmasıdır.
 
 * **Model:** `emrecan/bert-base-turkish-cased-mean-nli-stsb-tr` (TurkishBERT).
-
 * **Vektör Veritabanı:** PostgreSQL üzerinde **pgvector** eklentisi ile 768 boyutlu vektör benzerlik araması (cosine similarity).
-
 * **Entegrasyon:** Dockerized mimari ve anlık veri aktarımı.
 
 ### 📊 Sınıflandırılan Kategoriler
 
 Sistem, şikayetleri aşağıdaki ana departmanlara otomatik olarak yönlendirir:
 
-1. Su & Kanalizasyon
-2. Atık Yönetimi
-3. Temizlik
-4. Ulaşım & Trafik
-5. Yol & Altyapı
-6. Yeşil Alan & Bahçe
-7. Aydınlatma
-8. Sosyal Yardım
-9. Fatura & Ödeme
-10. Başvuru & Ruhsat
-11. Şikayet Takip
-12. Dijital Sistemler
+1. Su & Kanalizasyon, 2. Atık Yönetimi, 3. Temizlik, 4. Ulaşım & Trafik, 5. Yol & Altyapı, 6. Yeşil Alan & Bahçe, 7. Aydınlatma, 8. Sosyal Yardım, 9. Fatura & Ödeme, 10. Başvuru & Ruhsat, 11. Şikayet Takip, 12. Dijital Sistemler.
 
 ---
 
@@ -65,19 +66,15 @@ pip install sentence-transformers transformers scikit-learn pandas matplotlib se
 
 ### 3. Notebook'u Çalıştırın
 
-`istanbuilders_final.ipynb` dosyasını açarak hücreleri sırasıyla takip edin. Sistem otomatik olarak:
-
-* BERT modelini yükler,
-* Şikayet taslaklarını vektörize eder,
-* Verileri PostgreSQL'e aktarır ve sınıflandırma analizini gerçekleştirir.
+`istanbuilders_final.ipynb` dosyasını çalıştırdığınızda sistem otomatik olarak BERT modelini yükler, verileri vektörize eder ve PostgreSQL'e aktarır.
 
 ---
 
 ## 🏗 Veritabanı Şeması
 
-* **`departments`**: Kategori tanımları ve açıklamaları.
-* **`complaints`**: Ham metin, tahmin edilen kategori, güven skoru ve zaman damgası.
-* **`complaint_embeddings`**: Hızlı semantik arama için `vector(768)` tipinde saklanan embeddingler.
+* **`departments`**: Kategori tanımları.
+* **`complaints`**: Ham metin, tahmin edilen kategori ve güven skoru.
+* **`complaint_embeddings`**: Hızlı semantik arama için `vector(768)` tipindeki embeddingler.
 
 ---
 
@@ -87,8 +84,6 @@ pip install sentence-transformers transformers scikit-learn pandas matplotlib se
 * **Yiğit Gümüşlü**
 * **Zeynep Sıla Kaya**
 
-> "Dereceye girmemiş olsak da, 32 saat boyunca çalışan bir ürün ortaya koymak ve gerçek bir veri setini uçtan uca işlemek bizim için paha biçilemez bir deneyimdi." 
-
 ---
 
-**İBB Tech Istanbul 2025** 
+**İBB Tech Istanbul 2025**

@@ -1,4 +1,6 @@
-# 🚀 İstanBuilders: Yapay Zeka Destekli Akıllı Başvuru Takip Sistemi
+# ibb-hackathon-2025
+Yapay Zeka Destekli Başvuru Takip Platformu
+# İstanBuilders Complaint Classification System
 
 Bu proje, **İBB Tech Istanbul Yapay Zeka Hackathonu (Aralık 2025)** kapsamında **IstanBuilders** ekibi tarafından 32 saatlik kesintisiz bir maraton sürecinde geliştirilmiştir. Projemiz, "Akıllı Şehir" teması altında, var olan belediye hizmetlerinin yapay zeka ile iyileştirilmesi vizyonuna odaklanmıştır.
 
